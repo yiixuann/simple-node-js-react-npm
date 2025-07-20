@@ -24,5 +24,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "@microsoft/eslint-formatter-sarif": "^3.0.0",
+    "eslint-plugin-security": "^1.7.1",
+    "eslint-plugin-security-node": "^1.1.1",
+    "eslint-plugin-no-unsanitized": "^4.0.2"
+  }
+}
   }
 }
