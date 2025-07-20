@@ -5,7 +5,11 @@
     "node": true,
     "jest": true
   },
-  "extends": ["eslint:recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:security/recommended",
+    "plugin:security-node/recommended"
+  ],
   "parserOptions": {
     "ecmaVersion": 2021,
     "sourceType": "module",
@@ -13,20 +17,23 @@
       "jsx": true
     }
   },
-  "plugins": ["security"],
+  "plugins": [
+    "security",
+    "security-node"
+  ],
   "rules": {
     "security/detect-eval-with-expression": "error",
     "security/detect-non-literal-regexp": "error",
     "security/detect-unsafe-regex": "error",
     "security/detect-buffer-noassert": "error",
-    "security/detect-child-process": "warn",
+    "security/detect-child-process": "error",
     "security/detect-disable-mustache-escape": "error",
     "security/detect-no-csrf-before-method-override": "error",
-    "security/detect-non-literal-fs-filename": "warn",
-    "security/detect-object-injection": "warn",
-    "security/detect-possible-timing-attacks": "warn",
+    "security/detect-non-literal-fs-filename": "error",
+    "security/detect-object-injection": "error",
+    "security/detect-possible-timing-attacks": "error",
     "security/detect-pseudoRandomBytes": "error",
-    "no-console": "warn",
+    "no-console": "error",
     "no-unused-vars": "warn",
     "no-undef": "error"
   },
