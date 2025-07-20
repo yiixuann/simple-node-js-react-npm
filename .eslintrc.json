@@ -9,7 +9,8 @@
     "eslint:recommended",
     "plugin:security/recommended",
     "plugin:security-node/recommended",
-    "plugin:no-unsanitized/DOM"
+    "plugin:no-unsanitized/DOM",
+    "plugin:no-unsanitized/recommended-legacy"
   ],
   "parserOptions": {
     "ecmaVersion": 2021,
