@@ -10,7 +10,8 @@
     "plugin:security/recommended",
     "plugin:security-node/recommended",
     "plugin:no-unsanitized/DOM",
-    "plugin:no-unsanitized/recommended-legacy"
+    "plugin:no-unsanitized/recommended-legacy",
+    "plugin:security/recommended-legacy"
   ],
   "parserOptions": {
     "ecmaVersion": 2021,
